@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import GameList from "./pages/GameList.jsx";
 import GameCart from "./pages/GameCart.jsx";
 import Navbar from "./components/Navbar";
@@ -13,7 +13,7 @@ import News from "./pages/News.jsx";
 export default function App() {
   return (
     <GameContextProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar></Navbar>
         <ToastContainer></ToastContainer>
         <Routes>
@@ -24,7 +24,7 @@ export default function App() {
           <Route path="/game/:id" element={<SingleGame />}></Route>
           <Route path="/news" element={<News></News>}></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </GameContextProvider>
   );
 }
