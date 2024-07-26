@@ -115,16 +115,16 @@ body{
       gap: 0;
     }
     .logo input{
-      margin: 5px
+      margin-left: 5px;
+      margin-right: 5px;
     }
+    
   }
   @media (min-width: 374px){
     .logo{
       gap: 15px;
     }
-    .logo input{
-      margin: 0;
-    }
+    
   }
   @media (min-width: 424px){
     .logo{

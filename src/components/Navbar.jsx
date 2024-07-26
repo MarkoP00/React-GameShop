@@ -22,10 +22,13 @@ export default function Navbar() {
   };
 
   return (
-    <header className="bg-background-400 border-b-[2px] h-[100px] px-10 text-xl border-b-mainColors-200 w-full flex justify-between items-center z-20 fixed top-0 left-0">
+    <header className="bg-background-400 border-b-[2px] h-[100px] px-8 text-xl border-b-mainColors-200 w-full flex justify-between items-center z-20 fixed top-0 left-0">
       <div className="logo flex items-center justify-between gap-10 ">
         <h3 className="cursor-pointer hover:text-mainColors-200 ease-in duration-100 text-2xl font-[600]">
-          <Link to="/home" className="hover:bg-background-300 p-2 rounded-lg">
+          <Link
+            to="/home"
+            className="hover:bg-background-300 mx-[6px] rounded-lg"
+          >
             Logo
           </Link>
         </h3>
