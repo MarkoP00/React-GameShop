@@ -83,7 +83,9 @@ export default function GameCart() {
   };
   return (
     <section className="mt-[calc(120px+1rem)]">
-      <h1 className="text-center text-3xl font-semibold my-5">Your Cart</h1>
+      <h1 className="m-auto text-center text-2xl font-bold border-t-2 border-b-2 border-mainColors-300 p-2 my-5 w-60">
+        Your Cart
+      </h1>
       {cartItemsWithQuantity.length > 0 ? (
         <ul className="flex flex-wrap justify-center gap-5 p-5">
           {cartItemsWithQuantity.map((game) => (

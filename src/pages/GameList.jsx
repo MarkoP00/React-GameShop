@@ -16,7 +16,9 @@ export default function GameList() {
           "linear-gradient(to bottom, #0B0C10, rgba(0, 0, 0, 0.5)), linear-gradient( #0B0C10, #4682B4)",
       }}
     >
-      <h1 className="text-center m-5 text-[25px] font-[500]">Game list</h1>
+      <h1 className="text-2xl font-bold my-4 border-t-2 border-b-2 border-mainColors-300 p-2">
+        Game list
+      </h1>
       <main className="w-full max-w-[1500px]">
         {gameItems.length === 0 ? (
           <p className="text-center text-[20px] font-[400] text-white">
